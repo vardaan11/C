@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    int a = 50, b = 60, *p, *q;
+    
+    p = &a;
+    q = &b;
+    
+    printf("%d",*p+*q);
+    return 0;
+}

@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int num1 , num2 , a;
+    
+    printf("Enter numbers: ");
+    scanf("%d %d",&num1,&num2);
+    
+    printf("\nSelect 1. Addition\n\t\t2.Subtraction\n\t\t3.Multiplication\n\t\t4.Divison");
+    scanf("%d",&a);
+    
+    switch(a)
+    {
+        case 1 : printf("\nAddition : %d",num1+num2);break;
+        case 2 : printf("\nSubtraction : %d",num1-num2);break;
+        case 3 : printf("\nMultiplication : %d",num1*num2);break;
+        case 4 : printf("\nDivision : %d",num1/num2);break;
+        default:printf("\nPlease choose valid option");break;
+    }
+    
+    return 0;
+}

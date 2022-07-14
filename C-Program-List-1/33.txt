@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int mat1[3][3] = {1,1,1,1,1,1,1,1,1};
+    int mat2[3][3] = {{1,1,1},{1,1,1},{1,1,1}};
+    int ans[3][3];
+    for(int i=0;i<sizeof(mat1)/sizeof(mat1[0]);i++)
+    {
+        for(int j=0;j<sizeof(mat1[0])/sizeof(mat1[0][0]);j++)
+        {
+            ans[i][j] = mat1[i][j] + mat2[i][j];
+        }
+    }
+    
+    for(int i=0;i<sizeof(mat1)/sizeof(mat1[0]);i++)
+    {
+        for(int j=0;j<sizeof(mat1[0])/sizeof(mat1[0][0]);j++)
+        {
+            printf("%d\t",ans[i][j]);
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}

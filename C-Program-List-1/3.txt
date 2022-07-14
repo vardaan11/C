@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int subtract(int a, int b)
+{
+    printf("\nChosen option is 2:\nThe answer is: %d", a-b);
+}
+
+int add(int a, int b)
+{
+    printf("\nChosen option is 1:\nThe answer is: %d", a+b);
+}
+
+int main()
+{
+    int a,b,var;
+    scanf("%d %d",&a,&b);
+    
+    printf("Please select an option: 1. Addition \n\t\t\t\t\t\t 2. Subtraction");
+    scanf("%d",&var);
+    
+    switch(var)
+    {
+        case 1 : add(a,b);
+        break;
+        
+        case 2 : subtract(a,b);
+        break;
+        
+        default : printf("Please select valid option, lol."); break;
+    }
+    
+    return 0;
+}

@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+void add(int num, int digits)
+{
+    int sum =0 ;
+    while(digits)
+    {
+        sum += (num%10);
+        num = num/10;
+        digits--;
+    }
+    printf("\nThe sum of digits is : %d",sum);
+}
+
+int main()
+{
+    int num, digits;
+    printf("Enter the number: ");
+    scanf("%d",&num);
+    
+    printf("\nEnter the number of digits: ");
+    scanf("%d",&digits);
+    
+    add(num , digits);
+    
+    return 0;
+}

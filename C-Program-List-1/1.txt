@@ -1,0 +1,7 @@
+#include<stdio.h>
+
+int main()
+{
+    printf("Displayed a message on the screen lmao.");
+    return 0;
+}

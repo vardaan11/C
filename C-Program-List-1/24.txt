@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main()
+{
+    int sum=0,num;
+    do
+    {
+        scanf("%d",&num);
+        sum+=num;
+    }while(num!=0);
+    
+    printf("%d",sum);
+    return 0;
+}

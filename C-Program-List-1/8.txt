@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+int compare_em(int a , int b)
+{
+    if(a!=b)
+    {
+        if(a>b)
+        {
+            printf("\nA is bigger");
+        }
+        else
+        {
+            printf("\nB is bigger");
+        }
+    }
+    else
+    {
+        printf("\nAre same!");
+    }
+}
+
+int main()
+{
+    int a, b;
+    
+    printf("Enter the numbers a and b for comparision: ");
+    scanf("%d %d",&a,&b);
+    
+    compare_em(a,b);
+    
+    return 0;
+    
+}
